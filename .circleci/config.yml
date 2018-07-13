@@ -41,9 +41,7 @@ jobs:
 
 workflows:
   version: 2
-  
-  my_workflow:
-   jobs:
-     - build:
-          requires:
-            - build
+  build_and_test:
+    jobs:
+      - build
+      - test
