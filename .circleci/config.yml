@@ -39,7 +39,7 @@ jobs:
       # run tests!
       - run: mvn integration-test
   test:  
-   docker:
+    docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
       
@@ -79,4 +79,4 @@ workflows:
     jobs:
      - build
      - test
-    
+  
